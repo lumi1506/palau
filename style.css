@@ -44,7 +44,7 @@ body {
     background-color: var(--gray);
 }
 section {
-    background-color: #e7f9ff;
+    background-color: #f0fbff;
 }
 
 section>div {
@@ -115,9 +115,9 @@ section>div {
 }
 
 .japan p {
-    background-color: #dadada;
+    background-color: #e2e2e2;
 }
 
 .palau p {
-    background-color: #c5e1eb;
+    background-color: #d0e7f0;
 }
