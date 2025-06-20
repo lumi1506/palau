@@ -41,7 +41,7 @@ body {
     font-family: "M PLUS 1p", sans-serif;
     font-size: 1.8rem;
     letter-spacing: .08em;
-    background-color: var(--gray);
+    background-color: #f0fbff;
 }
 section {
     background-color: #f0fbff;
