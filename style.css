@@ -1,3 +1,7 @@
+:root {
+    --gray: #c1dce6;
+}
+
 img {
     width: 100%;
 }
@@ -6,20 +10,24 @@ html {
     font-size: 62.5%;
 }
 
-
 header {
+    display: flex;
     position: fixed;
-    background-color: #fff;
-    border-bottom: 1px solid #999999;
     width: 100%;
     max-width: 500px;
+    height: 6rem;
     margin-inline: auto;
+    background-color: #fff;
+    align-items: center;
 }
 
 h1 {
-    line-height: 5rem;
-    font-size: 1.8rem;
-    height: 5rem;
+    font-size: 2rem;
+    letter-spacing: .2em;
+}
+
+h2 {
+    margin-bottom: .2em;
 }
 
 header > div {
@@ -28,21 +36,21 @@ header > div {
 }
 
 body {
-    background-color: #ccc;
-    font-size: 1.8rem;
     max-width: 500px;
     margin-inline: auto;
+    font-family: "M PLUS 1p", sans-serif;
+    font-size: 1.8rem;
+    letter-spacing: .08em;
+    background-color: var(--gray);
 }
-
 section {
-    background-color: #f7f7f7;
+    background-color: #e7f9ff;
 }
 
 section>div {
     width: 90%;
-    margin-inline: auto;
-    border-bottom: 1px solid #e4e4e4;
     padding-bottom: 5rem;
+    margin-inline: auto;
 }
 
 #intro {
@@ -51,13 +59,14 @@ section>div {
 
 #intro > div {
     display: flex;
-    align-items: center;
     gap: 2rem;
+    border-bottom: 1px solid var(--gray);
+    align-items: center;
 }
 
 #intro img {
-    border-radius: 50%;
     width: 30%;
+    border-radius: 50%;
 }
 
 #intro .text-block {
@@ -65,22 +74,26 @@ section>div {
 }
 
 #intro .text-block p {
-    font-size: 1.6rem;
-}
-
-#chat {
-    padding-top: 5rem;
+    font-size: 1.4rem;
+    line-height: 1.3em;
+    letter-spacing: .05em;
 }
 
 #chat > div > div {
-    border-bottom: 1px solid #e4e4e4;
+    padding-block: 4rem;
+    border-bottom: 1px solid var(--gray);
+}
+
+
+#chat > div > div:last-child {
+    border-bottom: none;
 }
 
 #chat img {
     display: block;
     width: 3rem;
     aspect-ratio: 1/1;
-    border: 1px solid #ccc;
+    border: 1px solid var(--gray);
     border-radius: 50%;
 }
 
@@ -88,32 +101,23 @@ section>div {
     width: fit-content;
     padding: .5em .8em;
     border-radius: .5em;
-    letter-spacing: .05em;
 }
 
 .japan, .palau {
     display: flex;
-    /* flex-direction: column; */
     align-items: center;
     gap: .3em;
 }
 
 .japan {
-    align-items: flex-end;
     flex-direction: row-reverse;
     margin-bottom: 2rem;
-    margin-top: 3rem;
-}
-
-.palau {
-    margin-bottom: 3rem;
-    /* transform: translateY(-1.5em); */
 }
 
 .japan p {
-    background-color: #dddddd;
+    background-color: #dadada;
 }
 
 .palau p {
-    background-color: #c9e4eb;
+    background-color: #c5e1eb;
 }
